@@ -1,0 +1,29 @@
+
+# code set up
+dotnet new sln -n clock-service
+dotnet new webapi --name clock-api
+dotnet new react --name clock-feature
+dotnet new xunit --name clock-tests
+dotnet sln add clock-api/clock-api.csproj
+dotnet sln add clock-feature/clock-feature.csproj
+dotnet sln add clock-tests/clock-tests.csproj
+
+
+
+# Docker set up
+
+
+# Set up the Docker file to build the image with the sdk but only include the runtime in the release.
+
+# Run the tests from a docker image
+
+
+# Kubernetes set up
+
+# Local cache
+
+# reason for .net core -- cross platform
+# speed - smaller food print
+# reasons for containers
+# Self contined through to production
+# Isolation.
